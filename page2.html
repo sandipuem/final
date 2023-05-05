@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <header>
+    <button onclick="location.href='homepage.html'"><h2>Back</h2></button>
+  </header>
+  <body>
+    <h2><center>Medical Form</center></h2>
+    <form id="myForm">
+      <div class="container">
+        <div class="labelcontainer">
+          <label for="age">Age</label>
+          <br />
+          <label for="sex">Sex</label>
+          <br />
+          <label for="cp">Chest Pain Type</label>
+          <br />
+          <label for="trestbps">Resting Blood Pressure</label>
+          <br />
+          <label for="chol">Serum Cholesterol</label>
+          <br />
+          <label for="fbs">Fasting Blood Sugar</label>
+          <br />
+          <label for="restecg">Resting ECG Results</label>
+          <br />
+          <label for="thalach">Max Heart Rate </label>
+          <br />
+          <label for="exang">Exercise-induced Angina</label>
+          <br />
+          <label for="oldpeak">ST depression</label>
+          <br />
+          <label for="slope">slope of the peak exercise ST segment</label>
+          <br />
+          <label for="ca">Number of Major vessels</label>
+          <br />
+          <label for="thal">Thalassemia</label>
+        </div>
+        <div class="inputcontainer">
+          <input
+            type="text"
+            id="age"
+            name="age"
+            placeholder="Your age.."
+          /><br />
+          <select id="sex" name="sex">
+            <option selected>----select option----</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option></select
+          ><br />
+          <select id="cp" name="cp">
+            <option selected>----select option----</option>
+            <option value="0">Typical Angina</option>
+            <option value="1">Atypical Angina</option>
+            <option value="2">Non-anginal Pain</option>
+            <option value="3">Asymtomatic</option>
+          </select>
+          <br />
+          <input
+            type="text"
+            id="trestbps"
+            name="trestbps"
+            placeholder="A number in range [94-200] mmHg"
+          /><br />
+          <input
+            type="text"
+            id="chol"
+            name="chol"
+            placeholder="A number in range [126-564] mg/dl"
+          /><br />
+          <select id="fbs" name="fbs">
+            <option selected>----select option----</option>
+            <option value="1">Greater than 120 mg/dl</option>
+            <option value="0">Less than 120 mg/dl</option></select
+          ><br />
+          <select id="restecg" name="restecg">
+            <option selected>----select option----</option>
+            <option value="0">Normal</option>
+            <option value="1">Having ST-T wave abnormality</option>
+            <option value="2">
+              Probable or definite left ventricular hypertrophy
+            </option></select
+          ><br />
+          <input
+            type="text"
+            id="thalach"
+            name="thalach"
+            placeholder="A number in range [71-202] bpm"
+          /><br />
+          <select id="exang" name="exang">
+            <option selected>----select option----</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option></select
+          ><br />
+          <input
+            type="text"
+            id="oldpeak"
+            name="oldpeak"
+            placeholder="ST depression, typically in [0-6.2]"
+          /><br />
+          <select id="slope" name="slope">
+            <option selected>----select option----</option>
+            <option value="0">Upsloping</option>
+            <option value="1">Flat</option>
+            <option value="2">Downsloping</option></select
+          ><br />
+          <input
+            type="text"
+            id="ca"
+            name="ca"
+            placeholder="Typically in [0-4]"
+          /><br />
+          <select id="thal" name="thal">
+            <option selected>----select option----</option>
+            <option value="0">Normal</option>
+            <option value="1">Fixed Defect</option>
+            <option value="2">Reversible Defect</option></select
+          ><br />
+          <br />
+        </div>
+      </div>
+    </form>
+    <center><input type="submit" value="Submit" id="heart" /></center>
+    <script src="heart.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <style>
+      header {
+        margin-top: 30px;
+        font-size: 50px;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: auto;
+      }
+      button {
+        padding: 10px;
+        margin: 10px;
+        width: 150px;
+        height: 75px;
+		color: teal;
+		background-color: rgba(0, 0, 0, 0.5); 
+      }
+	  button:hover{
+		cursor: pointer;
+		border: 5px solid tomato;
+	  }
+      body {
+        background-image: url("https://medlineplus.gov/images/Anatomy.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+		background-size: 95%;
+      }
+    </style>
+  </head>
+  <header>Disease Detection</header>
+  <body>
+    <div class="container">
+      <button onclick="location.href='page1.html'"><h2>Kidney</h2></button>
+      <button onclick="location.href='page2.html'"><h2>Heart</h2></button>
+      <button onclick="location.href='page3.html'"><h2>Diabetes</h2></button>
+    </div>
+  </body>
+</html>
